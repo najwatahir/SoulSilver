@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* STYLE */
+
+body {
+	font: 16px/28px arial, sans-serif;
+	/* background-color: #B8F1B0; */
+	background-color: #e2ddda;
+	text-align: justify;
+	/* background-image: url(img/bg2.png); */
+	
+}
+
+/* HEADER */
+
+nav {
+	font-family: 'Merriweather Sans', sans-serif;
+	right: 2.5%;
+	position: fixed;
+	width: 95%; height: 60px;
+	text-align: center;
+	line-height: 60px;
+	margin: 0 auto 0 auto;
+	display: block;
+	transition: top .3s;
+	z-index: 500;
+	font-size: 1.3em;
+}
+
+.title {
+	float: left;
+	background: #fff;
+	width: 30%; 
+	padding-bottom: 1px;
+	padding-right: 20px;
+	font-size: 1.4em;
+	font-weight: bolder;
+	font-variant: small-caps;
+	border-radius: 0 0 10px 10px;
+ }
+.title a {
+	color: #64868b;
+}
+
+.header ul {
+	position: absolute;
+	background: #262626;
+	width: 70%;
+	left: 30%;
+	border-radius: 0 0 10px 10px;
+}
+
+.header ul li {
+	list-style: none;
+	width: calc(100% / 3);
+	height: 100%;
+	float: left;
+}
+
+.header ul li a {
+	display: inline-block;
+	width: 100%; height: 100%;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 80%;
+}
+
+.header ul li a:hover {
+	padding-top: 2px;
+	color: black;
+	background: #ff5722;
+	transition: .2s;
+	height: 100%;
+}
+ul li .n1:hover {
+	border-radius: 0 0 0 10px;
+}
+ul li .n3:hover {
+	border-radius: 0 0 10px 0;
+}
+/* MAIN */
+
+.space {
+	height: 60px;
+	/* background: red; */
+}
+
+main {
+	width: 90%;
+	margin: auto;
+	/* background: blue; */
+}
+
+.jumbotron {
+	padding-top: 200px;
+	height: 250px;
+	width: 100%;
+	line-height: 2.4em;
+    text-align: center;
+    font-size: 1.7em;
+    color: black;
+	/* background: linear-gradient(40deg,#fbeada 0,rgba(10,10,10,.8) 200%); */
+	background-color: #fbeade;
+}
+
+.psatu {
+	width: 97%;
+	margin: auto;
+	box-sizing: border-box;
+	background: rgba(251, 248, 241, .8);
+	padding: 15px 10px;
+	border-radius: 10px;
+	box-shadow: 0 0 15px black;
+}
+
+.pdua {
+	width: 97%;
+	margin: auto;
+	box-sizing: border-box;
+	background: rgba(251, 248, 241, .8);
+	padding: 15px 10px;
+	border-radius: 10px;
+	box-shadow: 0 0 15px black;
+}
+
+.pempat {
+	width: 97%;
+	margin: auto;
+	box-sizing: border-box;
+	background: rgba(251, 248, 241, .8);
+	padding: 15px 10px;
+	border-radius: 10px;
+	box-shadow: 0 0 15px black;
+}
+
+/* .plima {
+	width: 97%;
+	margin: auto;
+	box-sizing: border-box;
+	background: rgba(251, 248, 241, .8);
+	padding: 25px 0;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px black;
+} */
+
+/* .penam {
+	width: 97%;
+	margin: auto;
+	box-sizing: border-box;
+	background: rgba(251, 248, 241, .8);
+	padding: 25px 0;
+	border-radius: 10px;
+	box-shadow: 0 0 15px black;
+}
+
+.ptujuh {
+	width: 97%;
+	margin: auto;
+	box-sizing: border-box;
+	background: rgba(251, 248, 241, .8);
+	padding: 25px 0;
+	border-radius: 10px;
+	box-shadow: 0px 0 15px black;
+} */
+
+.pdelapan {
+	width: 97%;
+	margin: auto;
+	box-sizing: border-box;
+	background: rgba(251, 248, 241, .6);
+	padding: 15px 10px;
+	border-radius: 10px;
+	box-shadow: 0 0 15px black;
+}
+@media screen and (max-width: 400px){
+	div.hero1, div.hero2, div.hero3 {
+		height: 2em;
+		background-position: 0 0;
+		background-size: cover;
+		/* border-radius: 0px; */
+	}
+	div.hero1 {
+		background-position: 0 -60px;
+	}
+	div.hero3 {
+		height: 100px;
+		background-position: 0 58px;
+	}
+}
+@media screen and (max-width: 900px){
+	div.hero1, div.hero2, div.hero3 {
+		height: 15em;
+		background-position: 0 0;
+		background-size: cover;
+		/* border-radius: 0px; */
+	}
+	div.hero1 {
+		background-position: 0 -60px;
+	}
+	div.hero3 {
+		height: 13em;
+		background-position: 0 -58px;
+	}
+}
+@media screen and (max-width: 600px){
+	main {
+		font-size: 8.5px;
+		line-height: 1.6em;
+	}
+	nav {
+		width: 100%;
+		right: 0;
+		border-radius: none;
+	}
+	div.title {
+		font-size: 17px;
+		font-weight: bold;
+	}
+	div.header ul li a {
+		font-size: 9px;
+	}
+	div.header ul li a:hover {
+		background: #262626;
+		color: #fff;
+	}
+	div.jumbotron {
+		font-size: 1em;
+		height: 250px;
+	}
+	div.jumbotron p{
+		font-size: .9em;
+		width: 80%;
+		margin: auto;
+	}
+	article.card h2, article.card1 h2 {
+		font-size: 3em;
+		padding-top: 10px;
+		padding-bottom: 15px;
+	}
+	article.card2 h2 {
+		font-size: 3.3em;
+		padding-top: 10px;	
+	}
+	div.psatu img, div.pdua img {
+		width: 100%;
+		height: 140px;
+		margin-bottom: 10px;
+	}
+	div.hero1, div.hero2, div.hero3 {
+		height: 13em;
+		background-position: 0 0;
+		background-size: cover;
+		border-radius: 5px;
+	}
+	div.hero1 {
+		background-position: 0 -60px;
+	}
+	div.hero3 {
+		background-position: 0 -60px;
+	}
+}
+
+.card h2, .card1 h2 {
+	font-size: 3em;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 25px;
+	border-bottom: 2px solid black;
+}
+
+.card2 h2 {
+	font-size: 50px;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid black;
+}
+.card p {
+	padding-top: 30px;
+	font-size: 1.3em;
+	width: 95%;
+	margin: auto;
+}
+.card1 p {
+	font-size: 1.3em;
+	padding-top: 30px;
+	padding-bottom: 45px;
+	width: 95%;
+	margin: auto;
+
+}
+.card2 p {
+	font-size: 1.3em;
+	padding-top: 30px;
+	/* padding-bottom: 40px; */
+	width: 95%;
+	margin: auto;
+
+}
+.plima h3 {
+	font-size: 2em;
+	padding-left: 30px;
+	padding-bottom: 20px;
+}
+.plima p {
+	width: 92%;
+	margin: auto;
+	font-size: 1.4em;
+}
+
+.penam p {
+	width: 92%;
+	padding-top: 20px;
+	margin: auto;
+	font-size: 1.4em;
+}
+
+.penam h3 {
+	font-size: 2em;
+	padding-left: 30px;
+	padding-bottom: 20px;
+}
+
+.ptujuh h3 {
+	font-size: 2em;
+	padding-left: 30px;
+	padding-bottom: 20px;
+}
+
+.ptujuh p {
+	width: 92%;
+	padding-top: 20px;
+	margin: auto;
+	font-size: 1.4em;
+}
+/* GAMBAR */
+
+.psatu img {
+	width: 45%;
+	max-width: 484px;
+	float: right;
+	margin: 0 0 0 20px;
+	/* -webkit-clip-path: polygon(10% 0,100% 0,100% 100%,0 100%); */
+	border-radius: 10px;
+}
+
+.pdua img {
+	width: 40%;
+	float: left;
+	margin-right: 10px;
+	/* -webkit-clip-path: polygon(0 0,90% 0,100% 100%,0 100%); */
+	border-radius: 10px;
+}
+
+.pempat img {
+	width: 30%;
+	float: left;
+	margin: 0 1.5em 0px 0;
+	/* -webkit-clip-path: polygon(0 0,90% 0,100% 100%,0 100%); */
+	border-radius: 10px;
+}
+
+.hero1 {
+	width: 80%;
+	margin: auto;
+	height: 20em;
+	background-size: cover;
+	margin-bottom: 12px;
+	background-image: url(../img/desa1.png);
+	background-repeat: no-repeat;
+	background-position: 0 -200px;
+	border-radius: 10px;
+}
+
+.hero2 {
+	width: 80%;
+	margin: auto;
+	height: 20em;
+	background-size: cover;
+	background-image: url(../img/desa2.png);
+	background-repeat: no-repeat;
+	background-position: 0 -100px;
+	border-radius: 10px;
+}
+
+.hero3 {
+	width: 80%;
+	margin: auto;
+	height: 20em;
+	background-size: cover;
+	background-image: url(../img/desa3.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 10px;
+}
+
+/* TENTANG */
+
+.tengah {
+	text-align: center;
+	width: 100%;
+}
+
+.tutor-list {
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.kartu-tutor {
+	width: 20%;
+	margin: 0 auto;
+}
+
+.kartu-tutor img {
+	width: 80%;
+	border-radius: 50%;
+}
+
+.kartu-tutor p {
+	font-family: 'comic sans ms';
+	font-weight: 800;
+	font-size: 25px;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.comment-box {
+	width: 50%;
+	margin-left: 3.5%;
+}
+
+.comment-box h2{
+	font-size: 20px;
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+
+.comment-box input {
+	width: 100%;
+	height: 40px;
+	padding: 0 20px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: 1px solid #64868b;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 1.1em;
+}
+.comment-box input:focus {
+	border: 1px solid #000;
+	outline: 0;
+}
+.comment-box textarea{
+	width: 100%;
+	height: 100px;
+	padding: 15px 20px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: 1px solid #64868b;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 15px;
+	resize: none;
+}
+.comment-box textarea:focus {
+	border: 1px solid #000;
+	outline: 0;
+}
+.comment-box button {
+	border: 0;
+	padding: 10px 20px;
+	background: #262626;
+	border-radius: 5px;
+	color: #fff;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: bold;
+	margin-left: 20px;
+}
+.comment-box button:hover {
+	background: #ff5722;
+	color:#262626;
+	font-weight: bold;
+}
+.footer {
+	background-color: #333;
+	box-sizing: border-box;
+	padding: 10px 0;
+} 
+.footer .copy {
+	color: #eaeaea;
+	text-align: center;
+	font-size: 2em;
+}
